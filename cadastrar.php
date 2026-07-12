@@ -12,9 +12,25 @@ print_r($produtos);
 echo"</pre>";
 
 if ($_SERVER["REQUEST_METHOD"]=="POST"){
+  
+    $novoProduto = [
+
+       "nome" => $_POST["nome"],
+
+       "categoria"=> $_POST["Categoria"],
+
+       "preco" => $_POST["preco"],
+
+       "quantidade" => $_POST["quantidade"],
+
+       "Descrição" => $_POST["Descrição"],
+
+    ]; 
+
+    $produtos[] = $novoProduto;
 
     echo "<pre>";
-    print_r($_POST);
+    print_r($produtos);
     echo"</pre>";
 }
 ?>
