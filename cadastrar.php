@@ -3,9 +3,11 @@ $arquivo = "dados/produtos.json";
 
 $conteudo = file_get_contents($arquivo);
 
+$produtos = json_decode($conteudo,true);
+
 echo"<pre>";
 
-echo $conteudo;
+print_r($produtos);
 
 echo"</pre>";
 
