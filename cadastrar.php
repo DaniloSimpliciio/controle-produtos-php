@@ -1,4 +1,14 @@
 <?php
+$arquivo = "dados/produtos.json";
+
+$conteudo = file_get_contents($arquivo);
+
+echo"<pre>";
+
+echo $conteudo;
+
+echo"</pre>";
+
 if ($_SERVER["REQUEST_METHOD"]=="POST"){
 
     echo "<pre>";
