@@ -1,3 +1,12 @@
+<?php
+if ($_SERVER["REQUEST_METHOD"]=="POST"){
+
+    echo "<pre>";
+    print_r($_POST);
+    echo"</pre>";
+}
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -26,7 +35,7 @@
 
     <h2>Novo Produto</h2>
 
-    <form action="">
+    <form action="cadastrar.php" method="post">
 
     <label for="">Nome do Produto:
 
@@ -92,6 +101,5 @@
        Sistema de Controle de Produtos
        </p>
     
-    </footer>
 </body>
 </html>
