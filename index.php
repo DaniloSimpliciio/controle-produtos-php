@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Controle de produtos</title>
-    
+
     <link rel="stylesheet" href="css/style.css">
+     <link rel="stylesheet" href="cadastrar.php">
 </head>
 <body>
     
@@ -16,7 +17,7 @@
    <nav>
     <a href="index.php">Início</a>
     <a href="#">produtos</a>
-    <a href="#">cadastrar</a>
+    <a href="cadastrar.php">cadastrar</a>
    </nav>
 
    <main>
@@ -27,9 +28,11 @@
      </p>
 
      <section>
-        <button>
-            cadastrar produto
-        </button>
+
+        
+    <a class="botao" href="cadastrar.php">
+        cadastrar Produto
+    </a>
 
         <button>
              listar produtos
