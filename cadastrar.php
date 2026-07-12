@@ -29,6 +29,10 @@ if ($_SERVER["REQUEST_METHOD"]=="POST"){
 
     $produtos[] = $novoProduto;
 
+    $json = json_encode($produtos, JSON_PRETTY_PRINT);
+
+    file_put_contents($arquivo, $json);
+
     echo "<pre>";
     print_r($produtos);
     echo"</pre>";

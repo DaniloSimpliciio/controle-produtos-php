@@ -1,1 +1,9 @@
-[]  
+[
+    {
+        "nome": "pao",
+        "categoria": "carboitrado",
+        "preco": "12",
+        "quantidade": "10",
+        "Descri\u00e7\u00e3o": "p\u00e3o quentinho"
+    }
+]
