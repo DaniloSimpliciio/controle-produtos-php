@@ -1,20 +1,40 @@
 <?php
+
+$arquivo = "dados/produtos.json";
+
+$conteudo = file_get_contents($arquivo);
+
+$produtos = json_decode($conteudo, true);
+
+?> 
  
- $arquivo = "dados/produtos.json";
+ <table border="1">
 
- $conteudo = file_get_contents($arquivo);
+ <tr>
+    <th>Nome</th>
+    <th>categoria</th>
+    <th>preço</th>
+    <th>quantidade</th>
+ </tr>
 
- $produtos = json_decode($conteudo, true);
 
- echo "<pre>";
- print_r($produtos);
- echo "</pre>";
+<?php foreach ($produtos as $produto) {?>
 
- foreach($produtos as $produto){
-    echo $produto["nome"];
-    echo "<br>";}
- 
-?>
+<tr>
+
+   <td><?= $produto["nome"]?></td>
+
+   <td><?= $produto["categoria"]?></td>
+
+   <td><?= $produto["preco"]?></td>
+
+   <td><?= $produto["quantidade"]?></td>
+
+</tr>
+
+<?php } ?>
+
+</table>
 
 <!DOCTYPE html>
 <html lang="pt-br">
