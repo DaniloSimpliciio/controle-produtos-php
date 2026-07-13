@@ -1,3 +1,21 @@
+<?php
+ 
+ $arquivo = "dados/produtos.json";
+
+ $conteudo = file_get_contents($arquivo);
+
+ $produtos = json_decode($conteudo, true);
+
+ echo "<pre>";
+ print_r($produtos);
+ echo "</pre>";
+
+ foreach($produtos as $produto){
+    echo $produto["nome"];
+    echo "<br>";}
+ 
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
