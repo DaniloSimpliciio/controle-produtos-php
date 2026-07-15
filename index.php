@@ -1,4 +1,4 @@
-<?php
+<!-- <?php
 
 $arquivo = "dados/produtos.json";
 
@@ -34,7 +34,7 @@ $produtos = json_decode($conteudo, true);
 
 <?php } ?>
 
-</table>
+</table> -->
 
 <!DOCTYPE html>
 <html lang="pt-br">
