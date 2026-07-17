@@ -24,15 +24,19 @@ $produtos = json_decode($conteudo,true);
 <table>
 
 <tr>
+   <th>Índice</th>
     <th>Nome</th>
     <th>Categoria</th>
     <th>Preço</th>
     <th>Quantidade</th>
+    <th>Ações</th>
 </tr>
 
-<?php foreach($produtos as $produto) { ?>
+<?php foreach($produtos as $indice => $produto) { ?>
 
   <tr>
+
+    <td><?php echo $indice;?></td>
 
     <td><?php echo $produto["nome"];?></td>
     
@@ -42,6 +46,9 @@ $produtos = json_decode($conteudo,true);
 
     <td><?php echo $produto["quantidade"];?></td>
 
+    <td>
+      <a href="editar.php?indice=<?php echo $indice ?>">editar</a>
+    </td>
 
   </tr>
 
