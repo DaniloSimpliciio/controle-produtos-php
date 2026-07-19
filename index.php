@@ -54,7 +54,7 @@ $produtos = json_decode($conteudo, true);
 
    <nav>
     <a href="index.php">Início</a>
-    <a href="#">produtos</a>
+    <a href="listar.php">produtos</a>
     <a href="cadastrar.php">cadastrar</a>
    </nav>
 
