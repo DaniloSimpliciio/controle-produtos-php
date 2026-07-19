@@ -44,7 +44,7 @@ $produtos = json_decode($conteudo, true);
     <title>Controle de produtos</title>
 
     <link rel="stylesheet" href="css/style.css">
-     <link rel="stylesheet" href="cadastrar.php">
+
 </head>
 <body>
     

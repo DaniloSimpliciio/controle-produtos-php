@@ -14,6 +14,7 @@ $produtos = json_decode($conteudo,true);
     <title>Listar Produtos</title>
 
     <link rel="stylesheet" href="css/style.css">
+    
 
 </head>
 
