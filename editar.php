@@ -17,12 +17,15 @@ $produtos = json_decode(
        $produtos[$indice]["preco"] = $_POST["preco"];
        $produtos[$indice]["quantidade"] = $_POST["quantidade"];
        $produtos[$indice]["descricao"] = $_POST["descricao"];
-    }
+    
 
     $json = json_encode($produtos, JSON_PRETTY_PRINT);
 
     file_put_contents($arquivo,$json);
-   
+
+    header("location: listar.php");
+    exit;
+    }
 ?>
 
 <form method="POST">

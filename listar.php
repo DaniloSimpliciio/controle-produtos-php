@@ -1,3 +1,4 @@
+<a href="index.php">voltar</a>
 <?php
 $arquivo = "dados/produtos.json";
 

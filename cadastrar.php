@@ -1,3 +1,4 @@
+<a href="index.php">voltar</a>
 <?php
 $arquivo = "dados/produtos.json";
 
@@ -5,11 +6,6 @@ $conteudo = file_get_contents($arquivo);
 
 $produtos = json_decode($conteudo,true);
 
-echo"<pre>";
-
-print_r($produtos);
-
-echo"</pre>";
 
 if ($_SERVER["REQUEST_METHOD"]=="POST"){
   
