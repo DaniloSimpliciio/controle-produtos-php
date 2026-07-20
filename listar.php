@@ -59,10 +59,6 @@ $produtos = json_decode($conteudo,true);
 
     <td>
       <a href="editar.php?indice=<?php echo $indice ?>">editar</a>
-    </td>
-
-
-    <td>
       <a href="excluir.php?indice=<?php echo $indice ?>">excluir</a>
     </td>
   </tr>
