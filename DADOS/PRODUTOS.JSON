@@ -1,10 +1,1 @@
-[
-    {
-        "nome": "pao integral",
-        "categoria": "carboitrado",
-        "preco": "40",
-        "quantidade": "10",
-        "Descri\u00e7\u00e3o": "p\u00e3o quentinho",
-        "descricao": "<br \/>\r\n<b>Warning<\/b>:  Undefined array key \"descricao\" in <b>C:\\Users\\Dansi\\Documents\\projetos\\CONTROLE-PRODUTOS-PHP\\controle-produtos-php\\editar.php<\/b> on line <b>74<\/b><br \/>\r\n   "
-    }
-]
+[]

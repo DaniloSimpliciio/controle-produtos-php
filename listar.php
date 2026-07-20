@@ -1,5 +1,7 @@
-<a href="index.php">voltar</a>
 <?php
+
+session_start();
+
 $arquivo = "dados/produtos.json";
 
 $conteudo = file_get_contents($arquivo);
@@ -23,6 +25,13 @@ $produtos = json_decode($conteudo,true);
 
 <h1>Lista de Produtos</h1>
 
+<?php if(isset($_SESSION["mensagem"])){?>
+  <p>
+   <?= $_SESSION["mensagem"] ?>
+  </p>
+  <?php
+  unset($_SESSION["mensagem"]);
+}?>
 <table>
 
 <tr>
@@ -52,6 +61,10 @@ $produtos = json_decode($conteudo,true);
       <a href="editar.php?indice=<?php echo $indice ?>">editar</a>
     </td>
 
+
+    <td>
+      <a href="excluir.php?indice=<?php echo $indice ?>">excluir</a>
+    </td>
   </tr>
 
   <?php } ?>

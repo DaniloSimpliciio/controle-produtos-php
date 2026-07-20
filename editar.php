@@ -1,4 +1,5 @@
 <?php
+session_start();
 $arquivo = "dados/produtos.json";
 
 $produtos = json_decode(
@@ -22,6 +23,8 @@ $produtos = json_decode(
     $json = json_encode($produtos, JSON_PRETTY_PRINT);
 
     file_put_contents($arquivo,$json);
+
+    $_SESSION["mensagem"] = "produto alterado com sucesso!";
 
     header("location: listar.php");
     exit;
